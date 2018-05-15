@@ -1,0 +1,167 @@
+/* header & footer */
+
+header {
+  padding: 5px;
+  color: forestgreen;
+  border-bottom: 1px solid;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+h2 {
+  display: inline;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+
+footer {
+  background-color: forestgreen;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+ }
+
+ #footer {
+    bottom: 0;
+    position: fixed;
+    height: 60px;
+  }
+
+iframe {
+  border: none;
+  }
+
+/* body */
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 0.9em;
+  margin: 0 0 50px 0;
+  
+}
+
+h1 {
+  text-align: center;
+  }
+
+
+
+section {
+  margin: 5px auto;
+  padding: 10px;
+
+}
+
+article {
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border: top 1px solid forestgreen;
+  text-align: center;
+}
+
+/* unvisited link */
+
+a:link {
+  color: forestgreen;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* visited link */
+
+a:visited {
+  color: limegreen;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* mouse over link */
+
+a:hover {
+  color: forestgreen;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+/* selected link */
+
+a:active {
+  color: lime;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+table {
+  margin: 0 auto;
+}
+
+#member {
+  border: 1px solid forestgreen;
+}
+
+.btn {
+  text-align: center;
+  border: none;
+  /* Remove borders */
+  color: white;
+  /* Add a text color */
+  padding: 14px 28px;
+  /* Add some padding */
+  cursor: pointer;
+  /* Add a pointer cursor on mouse-over */
+}
+
+.update,.login,.tree {
+  background-color:forestgreen;
+  
+}
+
+/* Green */
+
+.update:hover,.login:hover,.tree:hover {
+  background-color:limegreen;
+}
+
+.profile-form,.login-form {
+  border: 1px solid #aaa;
+  background-color:#ddd;
+  width: 400px;
+  margin: 25px auto;
+  padding: 15px;
+}
+
+
+.profile-info label,
+.profile-info input,.login-info label,.login-info input {
+  display: block;
+}
+
+.profile-info input,.login-info input {
+  margin-bottom: 15px;
+  padding-left: 5px;
+  width: 300px;
+  height: 25px;
+}
+
+.treeindex{
+ border: 1px solid ;
+ text-align: center;
+ margin: 5px;
+}
+
+.bouton{
+  text-align: center;
+}

@@ -2,75 +2,89 @@
 <html lang="en">
 
 <head>
-    <title>MyFamilyTree - Login</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyFamilyTree - Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/display.js"></script>
 </head>
-
+<iframe src="header.html" width="100%" scrolling="no"></iframe>
 <body>
-    <iframe src="header.html" width="100%"></iframe>
-    <div id="story-details">
-        <section>
-            <h2>Family tree details</h2>
-            <article>
-                <!-- Title -->
-                <div>
-                    <label for="title">Family name: </label>
-                    <span id="title">Brindeau</span>
+  <div id="story-details">
+    <section>
+      <h1>Family tree details</h1>
+      <article>
+        <p id="display_data"></p>
+        <p>
+          <button onclick="displaytree()" type="button">Info</button>
+        </p>
+        <table>
+          <tr>
+            <td>
+              <!-- Member 1 -->
+              <div>
+                <label for="member">Member details: </label>
+                <div id="member">
+                  <a href="family-member.html">Father</a>
                 </div>
-                <!-- Text -->
-                <div>
-                    <label for="text">Family details: </label>
-                    <div id="text">xxx</div>
+              </div>
+            </td>
+            <td>
+              <!-- Member 2 -->
+              <div>
+                <label for="member">Member details:</label>
+                <div id="member">
+                  <a href="family-member.html">Mother</a>
                 </div>
-                <table>
-                    <tr>
-                        <td>
-                            <!-- Member 1 -->
-                            <div>
-                                <label for="member">Member details: </label>
-                                <div id="member">
-                                    <a href="family-member.html">Father</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <!-- Member 2 -->
-                            <div>
-                                <label for="member">Member details:</label>
-                                <div id="member">
-                                    <a href="family-member.html">Mother</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <!-- Member 3 -->
-                            <div>
-                                <label for="member">Member details: </label>
-                                <div id="member">
-                                    <a href="family-member.html">Brother</a>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <!-- Member 4 -->
-                            <div>
-                                <label for="member">Member details:</label>
-                                <div id="member">
-                                    <a href="family-member.html">Sister</a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <a href="upsert-tree.html">
-                    <span class="edit-button">Edit</span>
-                </a>
-            </article>
-
-    </div>
-
+              </div>
+            </td>
+            <td>
+              <!-- Member 3 -->
+              <div>
+                <label for="member">Member details: </label>
+                <div id="member">
+                  <a href="family-member.html">Brother</a>
+                </div>
+              </div>
+            </td>
+            <td>
+              <!-- Member 4 -->
+              <div>
+                <label for="member">Member details:</label>
+                <div id="member">
+                  <a href="family-member.html">Sister</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <td>
+            <!-- Member 5 -->
+            <div>
+              <label for="member">Member details:</label>
+              <div id="member">
+                <a href="family-member.html">Sister</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <!-- Member 6 -->
+            <div>
+              <label for="member">Member details:</label>
+              <div id="member">
+                <a href="family-member.html">Sister</a>
+              </div>
+            </div>
+          </td>
+          </tr>
+          </tr>
+        </table>
+        <a href="upsert-tree.html">
+          <span class="edit-button">Edit</span>
+        </a>
+      </article>
     </section>
-    <iframe class="footer" src="footer.html" width="100%"></iframe>
+  </div>
 </body>
-
+<iframe id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </html>

@@ -2,53 +2,67 @@
 <html lang="en">
 
 <head>
-    <title>MyFamilyTree - Home</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyFamilyTree - Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/display.js"></script>
 </head>
-
+<iframe class="header" src="header.html" width="100%" scrolling="no"></iframe>
 <body>
-    <iframe class="header" src="header.html" width="100%"></iframe>
-    <section>
-        <h2>Family Trees</h2>
-        <article>
-            <a href="family-tree.html">
-                <span class="family-tree">Family Tree details</a>
-            |
-            <a href="upsert-tree.html">
-                <span class="edit-button">Edit</span>
-            </a>
-            |
-            <a href="index.html">
-                <span class="delete-button">Delete</span>
-            </a>
-        </article>
-        <article>
-            <a href="family-tree.html">
-                <span class="family-tree">Family Tree details</a>
-            |
-            <a href="upsert-tree.html">
-                <span class="edit-button">Edit</span>
-            </a>
-            |
-            <a href="index.html">
-                <span class="delete-button">Delete</span>
-            </a>
-        </article>
-        <article>
-            <a href="family-tree.html">
-                <span class="family-tree">Family Tree details</a>
-            |
-            <a href="upsert-tree.html">
-                <span class="edit-button">Edit</span>
-            </a>
-            |
-            <a href="index.html">
-                <span class="delete-button">Delete</span>
-            </a>
-        </article>
-           
-    </section>
-    <iframe class="footer" src="footer.html" width="100%"></iframe>
-</body>
+  <section>
+    <h1>Family Trees</h1>
+    <div class="treeindex">
+      
+      <p id="display_data"></p>
+      <p>
+        <button onclick="displaytree()" type="button">Info</button>
+      </p>
+      <a href="family-tree.html">
+        <span class="family-tree">Family Tree details
+      </a> |
+      <a href="upsert-tree.html">
+        <span class="edit-button">Edit</span>
+      </a> |
+      <a href="index.html">
+        <span class="delete-button">Delete</span>
+      </a>
+    </div>
+  <div class="treeindex">
+      
+      <p id="display_data"></p>
+      <p>
+        <button onclick="displaytree()" type="button">Info</button>
+      </p>
+      <a href="family-tree.html">
+        <span class="family-tree">Family Tree details
+      </a> |
+      <a href="upsert-tree.html">
+        <span class="edit-button">Edit</span>
+      </a> |
+      <a href="index.html">
+        <span class="delete-button">Delete</span>
+      </a>
+  </div>
+    <div class="treeindex">
+      
+      <p id="display_data"></p>
+      <p>
+        <button onclick="displaytree()" type="button">Info</button>
+      </p>
+      <a href="family-tree.html">
+        <span class="family-tree">Family Tree details
+      </a> |
+      <a href="upsert-tree.html">
+        <span class="edit-button">Edit</span>
+      </a> |
+      <a href="index.html">
+        <span class="delete-button">Delete</span>
+      </a>
+    </div>
 
+  </section>
+</body>
+<iframe id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </html>

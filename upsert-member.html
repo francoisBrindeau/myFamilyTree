@@ -2,40 +2,63 @@
 <html lang="en">
 
 <head>
-    <title>MyFamilyTree - EditMember</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyFamilyTree - EditMember</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/save.js"></script>
+
 </head>
+<iframe src="header.html" width="100%" scrolling="no"></iframe>
 
 <body>
-    <iframe src="header.html" width="100%"></iframe>
-    <section>
-        <h2>Edit Member</h2>
-        <article class="signing">
-            <!-- First Name -->
-            <div class="profile-info">
-                <label for="first-name">First Name</label>
-                <input id="first-name" type="text" placeholder="Keno" />
-            </div>
-            <!-- Last Name -->
-            <div class="profile-info">
-                <label for="first-name">Last Name</label>
-                <input id="first-name" type="text" placeholder="Mullings" />
-            </div>
-            <!-- Gender -->
-            <div class="profile-info">
-                <label for="gender">How do you gender identify?</label>
-                <input id="gender" type="text" value="Male" />
-            </div>
-            <!-- DOB -->
-            <div class="profile-info">
-                <label for="DOB">Date of Birth</label>
-                <input type="date" name="Date of Birth" data-date-inline-picker="true" />
-            </div>
-            
-            <button id="update-profile">Update</button>
-        </article>
-    </section>
-    <iframe class="footer" src="footer.html" width="100%"></iframe>
+  <section class="profile-container">
+    <h1>Edit Member</h1>
+    <form class="profile-form">
+      <!-- Role selector-->
+      <div class="profile-info">
+        
+          <select>
+            <option value="0">Select your role :</option>
+            <option value="1">Mother</option>
+            <option value="2">Father</option>
+            <option value="3">Brother</option>
+            <option value="4">Sister</option>
+            <option value="5">Sun</option>
+            <option value="6">Daughter</option>
+            <option value="7">Grand mother</option>
+            <option value="8">Grand father</option>
+          </select>
+        
+      </div>
+      <!-- First Name -->
+      <div class="profile-info">
+        <label for="firstnamemember">First Name</label>
+        <input id="firstnamemember" type="text" placeholder="Enter your first name here">
+      </div>
+      <!-- Last Name -->
+      <div class="profile-info">
+        <label for="lastnamemember">Last Name</label>
+        <input id="lastnamemember" type="text" placeholder="Enter your last name here">
+      </div>
+      <!-- Gender -->
+      <div class="profile-info">
+        <label for="gendermember">How do you gender identify?</label>
+        <input id="gendermember" type="text" placeholder="Enter your gender here">
+      </div>
+      <!-- DOB -->
+      <div class="profile-info">
+        <label for="dobmember">Date of Birth</label>
+        <input id="dobmember" type="date" name="Date of Birth" data-date-inline-picker="true">
+      </div>
+      <p class="bouton">
+        <button class="btn update" onclick="savemember()" type="button">Update</button>
+      </p>
+      <a href="javascript:clear()">Clear Items</a>
+
+  </section>
 </body>
+<iframe id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 
 </html>

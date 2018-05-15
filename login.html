@@ -2,34 +2,38 @@
 <html lang="en">
 
 <head>
-    <title>MyFamilyTree - Login</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyFamilyTree - Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/save.js"></script>
+  
 </head>
-
+<iframe class="header" src="header.html" width="100%" scrolling="no"></iframe>
 <body>
-    <iframe class="header" src="header.html" width="100%"></iframe>
-    <div id="login-page">
-        <section>
-            <h2>Login</h2>
-            <article>
-                <!-- Email HTML code -->
-                <div class="login-info">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="Enter your email here" />
-                </div>
-                <!-- Password HTML code -->
-                <div class="login-info">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Enter your password here" />
-                </div>
-                <div class="login-info">
-                    <a href="forgot-password.html">Forgot Password?</a>
-                </div>
-                <input id="login-button" type="button" value="Login" />
-            </article>
-        </section>
-    </div>
-    <iframe class="footer" src="footer.html" width="100%"></iframe>
+     <section class="login-container">
+      <h1>Login</h1>
+      <form class="login-form">
+        <!-- Email HTML code -->
+        <div class="login-info">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email here">
+        </div>
+        <!-- Password HTML code -->
+        <div class="login-info">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter your password here">
+        </div>
+        <div class="login-info">
+          <a href="forgot-password.html">Forgot Password?</a>
+        </div>
+        <p class="bouton">
+          <button class="btn login" onclick="savelogin()" type="button">Login</button>
+        </p>
+        <a href="javascript:clear()">Clear Items</a>
+     </form>
+    </section>
 </body>
-
+<iframe id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
 </html>
