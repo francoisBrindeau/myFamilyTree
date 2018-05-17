@@ -8,57 +8,62 @@
 
 </head>
 <iframe src="header.html" width="100%" scrolling="no"></iframe>
+
 <body>
     <section class="profile-container">
         <h1>Edit Profile</h1>
         <form class="profile-form">
 
+            uiredui uuueC
             <!-- First Name -->
             <div class="profile-info">
                 <label for="first-name">First Name</label>
-                <input id="first-name" type="text" placeholder="Enter your first name here" />
+                <input id="first-name" type="text" placeholder="Enter your first name here" required="required" />
             </div>
             <!-- Last Name -->
             <div class="profile-info">
                 <label for="last-name">Last Name</label>
-                <input id="last-name" type="text" placeholder="Enter your last name here" />
+                <input id="last-name" type="text" placeholder="Enter your last name here" required="required" />
             </div>
             <!-- Alias -->
             <div class="profile-info">
                 <label for="alias">Alias</label>
-                <input id="alias" type="text" placeholder="Enter your alias here" />
+                <input id="alias" type="text" placeholder="Enter your alias here" required="required" />
             </div>
             <!-- Email -->
             <div class="profile-info">
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Enter your email here" />
+                <input id="email" type="email" placeholder="Enter your email here" required="required" />
             </div>
             <!-- Gender -->
             <div class="profile-info">
                 <label for="gender">How do you gender identify?</label>
-                <input id="gender" type="text" placeholder="Enter your gender here" />
+                <input id="gender" type="text" placeholder="Enter your gender here" required="required" />
             </div>
             <!-- DOB -->
             <div class="profile-info">
                 <label for="dob">Date of Birth</label>
-                <input id="date-of-birth" type="date" name="Date of Birth" data-date-inline-picker="true" />
+                <input id="date-of-birth" type="date" name="Date of Birth" data-date-inline-picker="true" required="required" />
             </div>
             <!-- Password -->
             <div class="profile-info">
                 <label for="password">Password</label>
-                <input type="password" placeholder="Enter your password" required />
+                <input type="password" placeholder="Enter your password" required="required" />
             </div>
             <!-- Confirm Password -->
             <div class="profile-info">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" placeholder="Confirm your password" required />
+                <input type="password" placeholder="Confirm your password" required="required" />
             </div>
             <p class="bouton">
-                <button class="btn update" onclick="saveprofile()" type="button"><a href="profile.html">Update</a></button>
+                <button class="btn update" onclick="saveprofile()" type="button">
+                    <a href="profile.html">Update</a>
+                </button>
             </p>
             <a href="javascript:clear()">Clear Items</a>
-    </form>
-</section>
+        </form>
+    </section>
 </body>
-<iframe  id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
+<iframe id="footer" src="footer.html" width="100%" scrolling="no"></iframe>
+
 </html>
